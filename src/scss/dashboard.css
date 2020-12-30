@@ -1,0 +1,14 @@
+.dashboard_sideMenu {
+  background-color: #f5f7ff;
+  padding: 10px;
+}
+
+.dashboard_container_sideMenu > .list-group-item {
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.dashboard_container_sideMenu > .active {
+  background-color: #1266f1;
+  color: #fff;
+}

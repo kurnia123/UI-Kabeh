@@ -1,4 +1,9 @@
 @import '~mdb-ui-kit/css/mdb.min.css';
+@import './dashboard.css';
+
+* {
+  font-family: Poppins, Bebas Neue, Inter;
+}
 
 .login_place,
 .bantuan_place {
@@ -13,4 +18,9 @@
 
 .bantuan_place {
   padding-bottom: 50px;
+}
+
+.idex_container_card {
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
