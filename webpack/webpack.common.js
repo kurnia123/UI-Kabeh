@@ -21,6 +21,7 @@ module.exports = {
       { from: Path.resolve(__dirname, '../src/index.html') },
       { from: Path.resolve(__dirname, '../src/login.html') },
       { from: Path.resolve(__dirname, '../src/bantuan.html') },
+      { from: Path.resolve(__dirname, '../src/promo.html') },
       { from: Path.resolve(__dirname, '../src/img'), to: 'img' },
     ]),
     new FixStyleOnlyEntriesPlugin(),

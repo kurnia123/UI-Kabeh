@@ -1,8 +1,16 @@
 @import '~mdb-ui-kit/css/mdb.min.css';
 
-.login_place {
-  height: 520px;
+.login_place,
+.bantuan_place {
   background-color: #f5f9ff;
   padding: 40px;
   margin: 20px;
+}
+
+.login_place {
+  height: 520px;
+}
+
+.bantuan_place {
+  padding-bottom: 50px;
 }
