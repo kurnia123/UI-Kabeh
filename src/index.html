@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>MDB Webpack Starter</title>
+    <title>Weed Plan</title>
     <!-- Favicon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -24,25 +24,24 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;400&display=swap"
       rel="stylesheet"
     />
     <!-- Main css file -->
     <link rel="stylesheet" href="css/index.min.css" />
     <!-- Custom styles -->
-    <style></style>
+    <style>
+      * {
+        font-family: Poppins, Bebas Neue, Inter;
+      }
+    </style>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="./img/logo.png" height="30" alt="" loading="lazy" />
+          <img src="./img/logo.png" height="50" alt="" loading="lazy" />
         </a>
         <span style="font-family: 'Bebas Neue'; font-size: 30px;" class="fw-bold">WeedPlan</span>
         <button
@@ -57,7 +56,7 @@
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mr-3">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -78,7 +77,11 @@
               placeholder="Cari Pesananmu"
               aria-label="Search"
             />
-            <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+            <button
+              class="btn btn-outline-primary btn-rounded"
+              type="button"
+              data-mdb-ripple-color="dark"
+            >
               Search
             </button>
           </form>
@@ -94,7 +97,12 @@
     <!-- Start your project here-->
     <div class="container">
       <div class="row mt-4 pb-5">
-        <div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide shadow-5-strong"
+          data-mdb-ride="carousel"
+          style="padding: 0px !important;"
+        >
           <ol class="carousel-indicators">
             <li
               data-mdb-target="#carouselExampleCaptions"
@@ -181,7 +189,7 @@
 
       <div class="row" style="margin-top: 8rem;">
         <p class="fs-3 fw-bold text-center">
-          Lorem Ipsum Lorem Ipsum Lorem Ipsum Ipsum Lorem Ipsum Ipsum Lorem Ipsum
+          Solusi Dekorasi Terbaik Untuk Anda
         </p>
       </div>
 
@@ -189,34 +197,29 @@
         <div class="col-md d-flex align-items-center flex-column">
           <i class="far fa-hand-point-up fa-4x"></i>
           <p class="fs-4 fw-bold pt-4">
-            Lorem Ipsum Ipsum Lorem Ipsum Ipsum Lorem Ipsum
+            Pilih Layanan Yang Anda Butuhkan
           </p>
           <p class="fs5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam facere ipsa accusamus
-            saepe cumque et assumenda perspiciatis. Rerum natus eveniet pariatur, ut ipsam iusto nam
-            dolores facere impedit ipsum velit.
+            Kami menyediakan pilihan layanan yang luas dari mitra-mitra terpercaya. Siap melayani
+            anda dengan professional.
           </p>
         </div>
         <div class="col-md d-flex align-items-center flex-column">
           <i class="far fa-building fa-4x"></i>
           <p class="fs-4 fw-bold pt-4">
-            Lorem Ipsum Ipsum Lorem Ipsum Ipsum Lorem Ipsum
+            Jual Layanan Dari Mitra Anda
           </p>
           <p class="fs5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam facere ipsa accusamus
-            saepe cumque et assumenda perspiciatis. Rerum natus eveniet pariatur, ut ipsam iusto nam
-            dolores facere impedit ipsum velit.
+            Kami menyediakan tempat bagi mitra anda untuk mempromosikan layanan anda.
           </p>
         </div>
         <div class="col-md d-flex align-items-center flex-column">
-          <i class="far fa-handshake fa-4x"></i>
+          <i class="fas fa-shopping-bag fa-4x"></i>
           <p class="fs-4 fw-bold pt-4">
-            Lorem Ipsum Ipsum Lorem Ipsum Ipsum Lorem Ipsum
+            Kami Yang Memproses Semuanya
           </p>
           <p class="fs5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam facere ipsa accusamus
-            saepe cumque et assumenda perspiciatis. Rerum natus eveniet pariatur, ut ipsam iusto nam
-            dolores facere impedit ipsum velit.
+            Platform kami akan memproses semua transaksi anda.
           </p>
         </div>
       </div>
@@ -224,258 +227,286 @@
       <hr />
 
       <div class="row pt-5">
-        <p class="fs-4 fw-bold pt-4 text-center">
-          Layanan Teratas
-        </p>
+        <div class="d-flex flex-row justify-content-between">
+          <p class="p-2 fs-4 fw-bold pt-4">
+            Layanan Teratas
+          </p>
+          <a class="p-2 fs-6 pt-4 text-dark text-decoration-underline" href="#">
+            Lihat Semua Layanan
+          </a>
+        </div>
+      </div>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4 pb-5">
-          <div class="col">
-            <div class="card">
-              <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
-                <a class="ripple" href="#!">
-                  <img
-                    alt="example"
-                    class="img-fluid rounded"
-                    src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
-                  />
-                </a>
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
+      <div class="row row-cols-1 row-cols-md-6 g-4 pb-5">
+        <div class="col">
+          <div class="card">
+            <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
+              <a class="ripple" href="#!">
+                <img
+                  alt="example"
+                  class="img-fluid rounded"
+                  src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
+                />
+              </a>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="pt-3" style="width: 100%;">
+              <div class="star d-flex justify-content-between">
+                <div class="d-flex justify-content-between">
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="fw-light">Review (4)</p>
               </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
-                <p class="card-text fw-bold fs-4">
-                  Rp. 50.000 -,
-                </p>
-                <a href="#!" class="btn btn-primary">Add to cart</a>
-                <a
-                  class="btn btn-primary btn-lg btn-floating"
-                  style="background-color: #e74c3c;"
-                  href="#!"
-                  role="button"
-                  ><i class="far fa-heart fa-lg"></i>
-                </a>
-              </div>
+
+              <p class="fs-6">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+              <p class="card-text fw-bold fs-5">
+                Rp. 50.000 -,
+              </p>
+              <a href="#!" class="btn btn-primary mx-auto">Add to cart</a>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
-                <a class="ripple" href="#!">
-                  <img
-                    alt="example"
-                    class="img-fluid rounded"
-                    src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
-                  />
-                </a>
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
+              <a class="ripple" href="#!">
+                <img
+                  alt="example"
+                  class="img-fluid rounded"
+                  src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
+                />
+              </a>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="pt-3" style="width: 100%;">
+              <div class="star d-flex justify-content-between">
+                <div class="d-flex justify-content-between">
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="fw-light">Review (4)</p>
               </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
-                <p class="card-text fw-bold fs-4">
-                  Rp. 50.000 -,
-                </p>
-                <a href="#!" class="btn btn-primary">Add to cart</a>
-                <a
-                  class="btn btn-primary btn-lg btn-floating"
-                  style="background-color: #e74c3c;"
-                  href="#!"
-                  role="button"
-                  ><i class="far fa-heart fa-lg"></i>
-                </a>
-              </div>
+
+              <p class="fs-6">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+              <p class="card-text fw-bold fs-5">
+                Rp. 50.000 -,
+              </p>
+              <a href="#!" class="btn btn-primary mx-auto">Add to cart</a>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
-                <a class="ripple" href="#!">
-                  <img
-                    alt="example"
-                    class="img-fluid rounded"
-                    src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
-                  />
-                </a>
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
+              <a class="ripple" href="#!">
+                <img
+                  alt="example"
+                  class="img-fluid rounded"
+                  src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
+                />
+              </a>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="pt-3" style="width: 100%;">
+              <div class="star d-flex justify-content-between">
+                <div class="d-flex justify-content-between">
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="fw-light">Review (4)</p>
               </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
-                <p class="card-text fw-bold fs-4">
-                  Rp. 50.000 -,
-                </p>
-                <a href="#!" class="btn btn-primary">Add to cart</a>
-                <a
-                  class="btn btn-primary btn-lg btn-floating"
-                  style="background-color: #e74c3c;"
-                  href="#!"
-                  role="button"
-                  ><i class="far fa-heart fa-lg"></i>
-                </a>
-              </div>
+
+              <p class="fs-6">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+              <p class="card-text fw-bold fs-5">
+                Rp. 50.000 -,
+              </p>
+              <a href="#!" class="btn btn-primary mx-auto">Add to cart</a>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
-                <a class="ripple" href="#!">
-                  <img
-                    alt="example"
-                    class="img-fluid rounded"
-                    src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
-                  />
-                </a>
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
+              <a class="ripple" href="#!">
+                <img
+                  alt="example"
+                  class="img-fluid rounded"
+                  src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
+                />
+              </a>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="pt-3" style="width: 100%;">
+              <div class="star d-flex justify-content-between">
+                <div class="d-flex justify-content-between">
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="fw-light">Review (4)</p>
               </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
-                <p class="card-text fw-bold fs-4">
-                  Rp. 50.000 -,
-                </p>
-                <a href="#!" class="btn btn-primary">Add to cart</a>
-                <a
-                  class="btn btn-primary btn-lg btn-floating"
-                  style="background-color: #e74c3c;"
-                  href="#!"
-                  role="button"
-                  ><i class="far fa-heart fa-lg"></i>
-                </a>
-              </div>
+
+              <p class="fs-6">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+              <p class="card-text fw-bold fs-5">
+                Rp. 50.000 -,
+              </p>
+              <a href="#!" class="btn btn-primary mx-auto">Add to cart</a>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
-                <a class="ripple" href="#!">
-                  <img
-                    alt="example"
-                    class="img-fluid rounded"
-                    src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
-                  />
-                </a>
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
+              <a class="ripple" href="#!">
+                <img
+                  alt="example"
+                  class="img-fluid rounded"
+                  src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
+                />
+              </a>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="pt-3" style="width: 100%;">
+              <div class="star d-flex justify-content-between">
+                <div class="d-flex justify-content-between">
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="fw-light">Review (4)</p>
               </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
-                <p class="card-text fw-bold fs-4">
-                  Rp. 50.000 -,
-                </p>
-                <a href="#!" class="btn btn-primary">Add to cart</a>
-                <a
-                  class="btn btn-primary btn-lg btn-floating"
-                  style="background-color: #e74c3c;"
-                  href="#!"
-                  role="button"
-                  ><i class="far fa-heart fa-lg"></i>
-                </a>
-              </div>
+
+              <p class="fs-6">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+              <p class="card-text fw-bold fs-5">
+                Rp. 50.000 -,
+              </p>
+              <a href="#!" class="btn btn-primary mx-auto">Add to cart</a>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
-                <a class="ripple" href="#!">
-                  <img
-                    alt="example"
-                    class="img-fluid rounded"
-                    src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
-                  />
-                </a>
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
+              <a class="ripple" href="#!">
+                <img
+                  alt="example"
+                  class="img-fluid rounded"
+                  src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
+                />
+              </a>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="pt-3" style="width: 100%;">
+              <div class="star d-flex justify-content-between">
+                <div class="d-flex justify-content-between">
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star" style="color: #f1c40f;"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="fw-light">Review (4)</p>
               </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
-                <p class="card-text fw-bold fs-4">
-                  Rp. 50.000 -,
-                </p>
-                <a href="#!" class="btn btn-primary">Add to cart</a>
-                <a
-                  class="btn btn-primary btn-lg btn-floating"
-                  style="background-color: #e74c3c;"
-                  href="#!"
-                  role="button"
-                  ><i class="far fa-heart fa-lg"></i>
-                </a>
-              </div>
+
+              <p class="fs-6">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+              <p class="card-text fw-bold fs-5">
+                Rp. 50.000 -,
+              </p>
+              <a href="#!" class="btn btn-primary mx-auto">Add to cart</a>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="row pt-5" style="padding-bottom: 100px;">
+        <div class="col-md-6">
+          <p class="fs-2 fw-bold">Ingin Bergabung Sebagai Mitra ?</p>
+          <button class="btn btn-primary btn-rounded btn-lg">Daftar Disini</button>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
     </div>
 
     <hr />
-    <footer class="bg-light text-center text-lg-start">
+    <footer class="bg-dark text-white text-center text-lg-start">
       <!-- Grid container -->
-      <div class="container p-4 pb-0">
-        <form action="">
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column-->
-            <div class="col-auto mb-4 mb-md-0">
-              <p class="pt-2"><strong>Sign up for our newsletter</strong></p>
-            </div>
-            <!--Grid column-->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Kontak Kami</h5>
 
-            <!--Grid column-->
-            <div class="col-md-5 col-12 mb-4 mb-md-0">
-              <!-- Email input -->
-              <div class="form-outline mb-4">
-                <input type="email" id="form5Example2" class="form-control" />
-                <label class="form-label" for="form5Example2">Email address</label>
+            <p>
+              Dapatkan pemberitahuan dari kami secara langsung
+            </p>
+            <div class="d-flex justify-content-start">
+              <div class="form-outline form-white mr-4">
+                <input type="text" id="formWhite" class="form-control" />
+                <label class="form-label" for="formWhite">Email</label>
               </div>
+              <button class="btn btn-primary btn-rounded">
+                Langganan
+              </button>
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-auto mb-4 mb-md-0">
-              <!-- Submit button -->
-              <button type="submit" class="btn btn-primary mb-4">Subscribe</button>
-            </div>
-            <!--Grid column-->
           </div>
-          <!--Grid row-->
-        </form>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">WeedPlan</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <p class="text-white">Alamat:</p>
+                <p class="text-white">JL. Mawar No.17D,Kemayoran, Jakarta Utara</p>
+              </li>
+              <li>
+                <p class="text-white">Jam Layanan :</p>
+                <p class="text-white">Senin - Jumat : 10.00 - 16.00</p>
+                <p class="text-white">Sabtu : 11.00 - 15.00</p>
+              </li>
+              <li>
+                <p class="text-white">E-mail : weddplan@email.com</p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
       </div>
       <!-- Grid container -->
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2020 Copyright:
-        <a class="text-dark" href="https://mdbootstrap.com/">personaapparel.com</a>
+        <a class="text-white" href="#">weedplan.com</a>
       </div>
       <!-- Copyright -->
     </footer>
