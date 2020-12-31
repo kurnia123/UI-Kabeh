@@ -39,7 +39,7 @@
         <a class="navbar-brand" href="#">
           <img src="./img/logo.png" height="50" alt="" loading="lazy" />
         </a>
-        <span style="font-family: 'Bebas Neue'; font-size: 30px" class="fw-bold">WeedPlan</span>
+        <span style="font-family: 'Bebas Neue'; font-size: 30px;" class="fw-bold">WeedPlan</span>
         <button
           class="navbar-toggler"
           type="button"
@@ -60,7 +60,7 @@
               <a class="nav-link" href="./promo.html">Promo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./mitra.html">Mitra</a>
+              <a class="nav-link" href="./mitra.html">Toko</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./bantuan.html">Bantuan</a>
@@ -91,7 +91,305 @@
     </nav>
 
     <!-- Start your project here-->
-    <div class="container"></div>
+    <div class="container">
+      <div class="ro">
+        <div class="container-fluid mt-5">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="#">Toko</a></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <p class="fs-3 fw-bold text-center">Toko</p>
+      <div class="row mt-5">
+        <div class="col-md-3">
+          <p class="fs-4 fw-bold">Filter</p>
+          <hr />
+          <div class="mitra_wilayah mt-4">
+            <p class="fs-6 fw-bold">Tema</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <input id="harga-01" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-01">Adventure</label>
+              </li>
+              <li class="list-group-item">
+                <input id="harga-02" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-02">Bikers</label>
+              </li>
+              <li class="list-group-item">
+                <input id="harga-03" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-03">Technology</label>
+              </li>
+              <li class="list-group-item">
+                <input id="harga-04" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-04">Science</label>
+              </li>
+              <li class="list-group-item">
+                <input id="harga-05" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-05">Go Grean</label>
+              </li>
+              <li class="list-group-item">
+                <input id="harga-06" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-06">Music</label>
+              </li>
+            </ul>
+          </div>
+          <div class="mitra_kategori mt-4">
+            <p class="fs-6 fw-bold">Kategori</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <input id="harga-11" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-11">O-Neck</label>
+              </li>
+              <li class="list-group-item">
+                <input id="harga-12" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-12">U-Neck</label>
+              </li>
+              <li class="list-group-item">
+                <input id="harga-13" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-13">Poloshirt</label>
+              </li>
+              <li class="list-group-item">
+                <input id="harga-14" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-14">V-Neck</label>
+              </li>
+              <li class="list-group-item">
+                <input id="harga-15" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-15">Raglan</label>
+              </li>
+              <li class="list-group-item">
+                <input id="harga-16" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-16">Y-Neck</label>
+              </li>
+              <li class="list-group-item">
+                <input id="harga-17" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-17">Turtleneck</label>
+              </li>
+            </ul>
+          </div>
+          <div class="mitra_harga mt-4">
+            <p class="fs-6 fw-bold">Harga</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <input id="harga-21" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-21">50.000 - 100.000</label>
+              </li>
+              <li class="list-group-item">
+                <input id="harga-22" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-22">100.000 - 150.000</label>
+              </li>
+              <li class="list-group-item">
+                <input id="harga-23" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-23">150.000 - 200.000</label>
+              </li>
+              <li class="list-group-item">
+                <input id="harga-24" class="form-check-input me-1" type="checkbox" value="" />
+                <label for="harga-24">200.000 - 300.000</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="row row-cols-1 row-cols-md-4 g-4 pb-5">
+            <div class="col">
+              <div class="card idex_container_card">
+                <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
+                  <a class="ripple" href="#!">
+                    <img
+                      alt="example"
+                      class="img-fluid rounded"
+                      src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
+                    />
+                  </a>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="pt-3" style="width: 100%;">
+                  <div class="star d-flex justify-content-between">
+                    <div class="d-flex justify-content-between">
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="fw-light">Review (4)</p>
+                  </div>
+
+                  <p class="fs-6">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                  <p class="card-text fw-bold fs-5">Rp. 50.000 -,</p>
+                  <a href="#!" class="btn btn-primary mx-auto">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card idex_container_card">
+                <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
+                  <a class="ripple" href="#!">
+                    <img
+                      alt="example"
+                      class="img-fluid rounded"
+                      src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
+                    />
+                  </a>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="pt-3" style="width: 100%;">
+                  <div class="star d-flex justify-content-between">
+                    <div class="d-flex justify-content-between">
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="fw-light">Review (4)</p>
+                  </div>
+
+                  <p class="fs-6">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                  <p class="card-text fw-bold fs-5">Rp. 50.000 -,</p>
+                  <a href="#!" class="btn btn-primary mx-auto">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card idex_container_card">
+                <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
+                  <a class="ripple" href="#!">
+                    <img
+                      alt="example"
+                      class="img-fluid rounded"
+                      src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
+                    />
+                  </a>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="pt-3" style="width: 100%;">
+                  <div class="star d-flex justify-content-between">
+                    <div class="d-flex justify-content-between">
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="fw-light">Review (4)</p>
+                  </div>
+
+                  <p class="fs-6">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                  <p class="card-text fw-bold fs-5">Rp. 50.000 -,</p>
+                  <a href="#!" class="btn btn-primary mx-auto">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card idex_container_card">
+                <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
+                  <a class="ripple" href="#!">
+                    <img
+                      alt="example"
+                      class="img-fluid rounded"
+                      src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
+                    />
+                  </a>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="pt-3" style="width: 100%;">
+                  <div class="star d-flex justify-content-between">
+                    <div class="d-flex justify-content-between">
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="fw-light">Review (4)</p>
+                  </div>
+
+                  <p class="fs-6">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                  <p class="card-text fw-bold fs-5">Rp. 50.000 -,</p>
+                  <a href="#!" class="btn btn-primary mx-auto">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card idex_container_card">
+                <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
+                  <a class="ripple" href="#!">
+                    <img
+                      alt="example"
+                      class="img-fluid rounded"
+                      src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
+                    />
+                  </a>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="pt-3" style="width: 100%;">
+                  <div class="star d-flex justify-content-between">
+                    <div class="d-flex justify-content-between">
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="fw-light">Review (4)</p>
+                  </div>
+
+                  <p class="fs-6">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                  <p class="card-text fw-bold fs-5">Rp. 50.000 -,</p>
+                  <a href="#!" class="btn btn-primary mx-auto">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card idex_container_card">
+                <div class="bg-image hover-zoom hover-shadow ripple" data-mdb-ripple-color="light">
+                  <a class="ripple" href="#!">
+                    <img
+                      alt="example"
+                      class="img-fluid rounded"
+                      src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
+                    />
+                  </a>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="pt-3" style="width: 100%;">
+                  <div class="star d-flex justify-content-between">
+                    <div class="d-flex justify-content-between">
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star" style="color: #f1c40f;"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="fw-light">Review (4)</p>
+                  </div>
+
+                  <p class="fs-6">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                  <p class="card-text fw-bold fs-5">Rp. 50.000 -,</p>
+                  <a href="#!" class="btn btn-primary mx-auto">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <hr />
     <footer class="bg-dark text-white text-center text-lg-start">
@@ -140,7 +438,7 @@
       <!-- Grid container -->
 
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2020 Copyright:
         <a class="text-white" href="#">weedplan.com</a>
       </div>
