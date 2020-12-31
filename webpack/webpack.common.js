@@ -15,14 +15,16 @@ module.exports = {
   },
   plugins: [
     new Webpack.ProvidePlugin({
-      'mdb': 'mdb',
+      mdb: 'mdb',
     }),
     new CopyWebpackPlugin([
-      { from: Path.resolve(__dirname, '../src/index.html') },
-      { from: Path.resolve(__dirname, '../src/login.html') },
       { from: Path.resolve(__dirname, '../src/bantuan.html') },
       { from: Path.resolve(__dirname, '../src/dashboard.html') },
+      { from: Path.resolve(__dirname, '../src/index.html') },
+      { from: Path.resolve(__dirname, '../src/login.html') },
+      { from: Path.resolve(__dirname, '../src/mitra.html') },
       { from: Path.resolve(__dirname, '../src/promo.html') },
+      { from: Path.resolve(__dirname, '../src/signup.html') },
       { from: Path.resolve(__dirname, '../src/img'), to: 'img' },
     ]),
     new FixStyleOnlyEntriesPlugin(),
@@ -33,7 +35,7 @@ module.exports = {
   resolve: {
     alias: {
       '~': Path.resolve(__dirname, '../src'),
-      'mdb': Path.join(__dirname, '../node_modules/mdb-ui-kit'),
+      mdb: Path.join(__dirname, '../node_modules/mdb-ui-kit'),
     },
   },
   module: {

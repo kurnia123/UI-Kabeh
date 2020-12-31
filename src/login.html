@@ -39,7 +39,7 @@
         <a class="navbar-brand" href="#">
           <img src="./img/logo.png" height="50" alt="" loading="lazy" />
         </a>
-        <span style="font-family: 'Bebas Neue'; font-size: 30px;" class="fw-bold">WeedPlan</span>
+        <span style="font-family: 'Bebas Neue'; font-size: 30px" class="fw-bold">WeedPlan</span>
         <button
           class="navbar-toggler"
           type="button"
@@ -54,7 +54,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mr-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./promo.html">Promo</a>
@@ -83,8 +83,8 @@
           </form>
           <br />
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button type="button" class="btn btn-primary btn-rounded me-md-1">Sign in</button>
-            <button type="button" class="btn btn-outline-primary btn-rounded">Login</button>
+            <a href="./signup.html" class="btn btn-primary btn-rounded me-md-1">Sign Up</a>
+            <a href="./login.html" class="btn btn-outline-primary btn-rounded">Login</a>
           </div>
         </div>
       </div>
@@ -102,68 +102,68 @@
       <p class="fs-1 fw-bold text-black">Customer Login</p>
 
       <div class="row d-flex justify-content-center pb-5">
-        <div class="col-md-4 login_place m-2">
-          <p class="fs-4 fw-bold">Registered Customers</p>
-          <p class="fs-6">Jika sudah punya akun, sign in menggunkan email</p>
-          <form>
-            <!-- 2 column grid layout with text inputs for the first and last names -->
-            <div class="row mb-4 needs-validation">
-              <div class="col">
-                <div class="form-outline">
-                  <input type="text" id="form3Example1" class="form-control" required />
-                  <label class="form-label" for="form3Example1">First name</label>
-                  <div class="valid-feedback">data tidak boleh kosong</div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="form-outline">
-                  <input type="text" id="form3Example2" class="form-control" required />
-                  <label class="form-label" for="form3Example2">Last name</label>
-                  <div class="valid-feedback">data tidak boleh kosong</div>
-                </div>
-              </div>
-            </div>
-
+        <div class="col-md-4 text-center">
+          <img src="./img/logo.png" alt="logo" style="height: 100px" />
+          <p class="fw-bold fs-4">WeedPlan</p>
+          <form class="mt-4 pb-5">
             <!-- Email input -->
             <div class="form-outline mb-4">
-              <input type="email" id="form3Example3" class="form-control" value=" " required />
-              <label class="form-label" for="form3Example3">Email address</label>
-              <div class="valid-feedback">isikan email anda</div>
+              <input type="email" id="form2Example1" class="form-control" />
+              <label class="form-label" for="form2Example1">Email address</label>
             </div>
 
             <!-- Password input -->
             <div class="form-outline mb-4">
-              <input type="password" id="form3Example4" class="form-control" required />
-              <label class="form-label" for="form3Example4">Password</label>
-              <div class="valid-feedback">data tidak boleh kosong</div>
+              <input type="password" id="form2Example2" class="form-control" />
+              <label class="form-label" for="form2Example2">Password</label>
             </div>
 
-            <!-- Checkbox -->
-            <div class="form-check d-flex justify-content-center mb-4">
-              <input
-                class="form-check-input me-2"
-                type="checkbox"
-                value=""
-                id="form2Example3"
-                checked
-              />
-              <label class="form-check-label" for="form2Example3">
-                Subscribe to our newsletter
-              </label>
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="form2Example3"
+                    checked
+                  />
+                  <label class="form-check-label" for="form2Example3"> Remember me </label>
+                </div>
+              </div>
+
+              <div class="col">
+                <!-- Simple link -->
+                <a href="#!">Forgot password?</a>
+              </div>
             </div>
 
             <!-- Submit button -->
-            <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+            <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+            <!-- Register buttons -->
+            <div class="text-center">
+              <p>Not a member? <a href="./signup.html">Register</a></p>
+              <p>or sign up with:</p>
+              <button type="button" class="btn btn-primary btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+
+              <button type="button" class="btn btn-primary btn-floating mx-1">
+                <i class="fab fa-google"></i>
+              </button>
+
+              <button type="button" class="btn btn-primary btn-floating mx-1">
+                <i class="fab fa-twitter"></i>
+              </button>
+
+              <button type="button" class="btn btn-primary btn-floating mx-1">
+                <i class="fab fa-github"></i>
+              </button>
+            </div>
           </form>
-          <a href="#" class="text-center">Lupa password ?</a>
-        </div>
-        <div class="col-md-4 login_place m-2">
-          <p class="fs-4 fw-bold">New Customers ?</p>
-          <p class="fs-6">Dengan membuat akun baru, anda dapat :</p>
-          <p class="fs-6">- Memesan layanan dengan cepat</p>
-          <p class="fs-6">- Mendapat promo</p>
-          <p class="fs-6">- Memanage pesanan</p>
-          <button class="btn btn-primary btn-rounded btn-lg mt-5">Create Account</button>
         </div>
       </div>
     </div>
@@ -178,17 +178,13 @@
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
             <h5 class="text-uppercase">Kontak Kami</h5>
 
-            <p>
-              Dapatkan pemberitahuan dari kami secara langsung
-            </p>
+            <p>Dapatkan pemberitahuan dari kami secara langsung</p>
             <div class="d-flex justify-content-start">
               <div class="form-outline form-white mr-4">
                 <input type="text" id="formWhite" class="form-control" />
                 <label class="form-label" for="formWhite">Email</label>
               </div>
-              <button class="btn btn-primary btn-rounded">
-                Langganan
-              </button>
+              <button class="btn btn-primary btn-rounded">Langganan</button>
             </div>
           </div>
           <!--Grid column-->
@@ -219,7 +215,7 @@
       <!-- Grid container -->
 
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2020 Copyright:
         <a class="text-white" href="#">weedplan.com</a>
       </div>
