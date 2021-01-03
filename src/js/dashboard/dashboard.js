@@ -1,27 +1,40 @@
-// import './layanan-mitra.js';
+import { getAccount } from './account.js';
+import { getLayananMitra, btnFormUploadProduk } from './layanan-mitra.js';
+import './layanan-mitra.js';
 
-let elmSideMenu = document.querySelector('.dashboard_container_sideMenu').children;
-let content = document.querySelector('.content-ku');
-
-elmSideMenu.forEach(itemElm => {
-    if(itemElm.localName == "hr") {
-        return;
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
     }
+    return null;
+}
 
-    itemElm.addEventListener('click', function(event) {
-        console.log(event.target.attributes['id'].value);
-        let nameFile = event.target.attributes['id'].value;
-        
-        // cek page Layanan Mitra
-        if (nameFile == 'list-mitra-list') {
-            nameFile = nameFile + "-non";
-        }
-        
-        fetch(`../../template/dashboard/${nameFile}.html`)
-        .then(res => res.text())
-        .then(res => {
-            console.log(res);
-            content.innerHTML = res;
-        })
+if (getCookie('token') === null) {
+    window.location.replace('http://ci4api.xyz/login.html')
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    
+    let token = getCookie('token');
+    
+    // ======================= Load Data ==============
+    
+    getAccount(token,getCookie)
+    
+    // Click Event Listener
+    let elmAccount = document.querySelector("#list-account-list");
+    elmAccount.addEventListener('click', function() {
+        getAccount(token, getCookie)
+    });
+
+    // ============== Layanan Mitra
+
+    let elmLayananMitra = document.querySelector("#list-mitra-list");
+    elmLayananMitra.addEventListener('click', function(){
+        getLayananMitra(getCookie);
     })
 })

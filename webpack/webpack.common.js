@@ -9,6 +9,9 @@ module.exports = {
     'js/index': Path.resolve(__dirname, '../src/js/index.js'),
     'js/dashboard/dashboard': Path.resolve(__dirname, '../src/js/dashboard/dashboard.js'),
     'js/login/login': Path.resolve(__dirname, '../src/js/login/login.js'),
+    'js/signup/signup': Path.resolve(__dirname, '../src/js/signup/signup.js'),
+    'js/shop/shop': Path.resolve(__dirname, '../src/js/shop/shop.js'),
+    'js/logout/logout': Path.resolve(__dirname, '../src/js/logout/logout.js'),
     'css/index': Path.resolve(__dirname, '../src/scss/index.scss'),
   },
   output: {
@@ -27,6 +30,7 @@ module.exports = {
       { from: Path.resolve(__dirname, '../src/mitra.html') },
       { from: Path.resolve(__dirname, '../src/promo.html') },
       { from: Path.resolve(__dirname, '../src/signup.html') },
+      { from: Path.resolve(__dirname, '../src/logout.html') },
       // ==========================================================
       { from: Path.resolve(__dirname, '../src/template/dashboard/'), to: Path.resolve(__dirname, '../dist/template/dashboard')},
       { from: Path.resolve(__dirname, '../src/img'), to: 'img' },

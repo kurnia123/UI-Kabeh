@@ -1,4 +1,6 @@
-const inputUrl = document.querySelector(".input-url-redirect");
+import './get_data_location.js';
+
+const inputUrl = document.querySelector(".form-signup");
 
 const urlParams = new URLSearchParams(window.location.search);
 // const myParam = urlParams.get('url');
@@ -17,12 +19,11 @@ function getCookie(name) {
     return null;
 }
  
-function setCookie(name,value) {
-    let now = new Date();
-    let time = now.getTime();
-    let expireTime = time + 1000*36000;
-    now.setTime(expireTime);
-    let result = document.cookie = name + "=" + value + "; expires=" + now.toUTCString() + "; domain=.ci4api.xyz; path=/; SameSite=Lax";
+function setCookie(name,value,days) {
+    var expires = "";
+    expires = "; expires=" + days;
+
+    let result = document.cookie = name + "=" + value  + expires + "; path=/; SameSite=Lax";
 
     console.log("Result Cookies : ",result);
     console.log("Cek after setCookies : ",getCookie(name));
@@ -44,7 +45,6 @@ async function postFormDataAsJson({url, formData}) {
     return response.json();
 }
 
-
 async function handleFormSubmit(event) {
     event.preventDefault();
     const form = event.currentTarget;
@@ -54,29 +54,16 @@ async function handleFormSubmit(event) {
         const formData = new FormData(form);
         const responseData = await postFormDataAsJson({url, formData});
 
-        let data = responseData.token.split('|');
         console.log(responseData);
-
-        setCookie('token', data[0]);
-        setCookie('id_user', data[1]);
-        setCookie('is_seller', data[2]);
-
-        console.log("Cookies Token : ", getCookie('token'));
-        console.log("Cookies id_user : ", getCookie('id_user'));
-        console.log("Cookies is_seller : ", getCookie('is_seller'));
-
-        if (getCookie('token') !== null) {
-            window.location.replace(data[3]);
+        if (responseData.status == 200) {
+            alert("Berhasil Membuat Akun")
         }
+
+        window.location.replace("http://ci4api.xyz/login.html");
     } catch (error) {
         console.log("ini error : ",error);
     }
 }
 
-const formData = document.querySelector(".form-login");
+const formData = document.querySelector(".form-signup");
 formData.addEventListener("submit", handleFormSubmit);
-
-
-if (getCookie("token") != null) {
-    window.location.replace("http://ci4api.xyz");
-}
